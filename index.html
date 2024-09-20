@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>First Excersice</h1>
+
+    <h2>Requierements</h2>
+    <ul>
+        <li>Name: Required, at least 3 characters.</li>
+        <li>Email: Required, must be a valid email using the type="email" HTML5 validation.</li>
+        <li>Message: Required, at least 10 characters long.</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ul>
+        <li>Use HTML5 validation for the email field.</li>
+        <li>Use JavaScript to ensure the name and message fields meet the length requirements.</li>
+        <li>Display custom error messages if validations fail.</li>
+    </ul>
+
+    <form onsubmit="formValidator()">
+        <label>Name</label>
+        <span class="error" id="errorName"></span>
+        <input id="inputName" type="text" required>
+
+        <label>Email</label>
+        <input id="inputEmail" type="email" required>
+
+        <label>Messages</label>
+        <span class="error" id="errorMessage"></span>
+        <textarea id="inputMessage" required></textarea>
+        <button>Submit</button>
+    </form>
+
+    <p id="messageOutPut"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

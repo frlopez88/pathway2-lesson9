@@ -1,0 +1,9 @@
+input, textarea{
+   display: block; 
+   margin-bottom: 10px
+}
+
+.error {
+   display: block;
+   color: brown;
+}
